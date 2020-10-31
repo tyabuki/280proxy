@@ -16,11 +16,11 @@ const dest = [
 ];
 
 app.use((req, res, next) => {
-  if (!dest.includes(req.originalUrl)) {
+  if (!dest.includes(req.path)) {
     res.status(404).send('404 Not Found.');
     return;
   }
-  const [base, ext] = req.originalUrl.split('.');
+  const [base, ext] = req.path.split('.');
   const url = `https://280blocker.net/${base}_${moment().format('YYYYMM')}.${ext}`;
   request.get(url).pipe(res);
 });
