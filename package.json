@@ -1,0 +1,25 @@
+{
+  "name": "280proxy",
+  "version": "1.0.0",
+  "description": "proxy for 280blocker definition file",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyabuki/280proxy.git"
+  },
+  "author": "tyabuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyabuki/280proxy/issues"
+  },
+  "homepage": "https://github.com/tyabuki/280proxy#readme",
+  "dependencies": {
+    "express": "~4.17.1",
+    "moment": "^2.29.1",
+    "morgan": "~1.10.0",
+    "request": "~2.88.2"
+  }
+}
